@@ -37,6 +37,32 @@ def merge_sort(nums):
 
   return sorted_first_and_second_halfs
 
+def bubble_sort(nums):
+
+  for i in range(len(nums)):
+    stop_index = len(nums) - i
+    for j in range(0, stop_index):
+      if (j < stop_index - 1 and nums[j] > nums[j + 1]):
+          #swap
+          next_num = nums[j + 1]
+          nums[j + 1] = nums[j]
+          nums[j] = next_num
+
+  return nums
+
+def insertion_sort(nums):
+
+  for i in range(len(nums)):
+    curr = nums[i]
+    backwards_index = i - 1
+    while (0 <= backwards_index and curr < nums[backwards_index]):
+      #swap
+      temp = nums[backwards_index + 1]
+      nums[backwards_index + 1] = nums[backwards_index]
+      nums[backwards_index] = temp
+      backwards_index -= 1
+
+  return nums
 
 
 def test_sort():
@@ -53,6 +79,6 @@ def test_sort():
   ]
 
   for i in range(len(test_cases)):
-    print(merge_sort(test_cases[i]))
+    print("insertion ", insertion_sort(test_cases[i]))
 
 test_sort()
