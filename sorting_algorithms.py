@@ -1,4 +1,4 @@
-#import sys
+import sys
 #sys.setrecursionlimit(999)
 
 def merge_sort(nums):
@@ -37,6 +37,40 @@ def merge_sort(nums):
 
   return sorted_first_and_second_halfs
 
+
+def quick_sort(nums):
+  quick_sort_helper(nums, 0, len(nums) - 1)
+  return nums
+
+def quick_sort_helper(nums, left_index, right_index):
+
+  if (left_index >= right_index):
+    return
+
+  pivot = nums[right_index]
+  pivot_index = sort_by_pivot(nums, left_index, right_index, pivot)
+  quick_sort_helper(nums, left_index, pivot_index - 1)
+  quick_sort_helper(nums, pivot_index + 1, right_index)
+
+
+#return final index of the pivot
+def sort_by_pivot(nums, left_index, right_index, pivot):
+
+  swap_index = left_index
+  for i in range(left_index, right_index):
+    curr = nums[i]
+    if (curr < pivot):
+      nums[i] = nums[swap_index]
+      nums[swap_index] = curr
+      swap_index += 1
+
+  nums[right_index] = nums[swap_index]
+  nums[swap_index] = pivot
+  return swap_index
+
+
+
+
 def bubble_sort(nums):
 
   for i in range(len(nums)):
@@ -65,6 +99,27 @@ def insertion_sort(nums):
   return nums
 
 
+def selection_sort(nums):
+
+
+  for i in range(len(nums) - 1):
+    index_of_minimum = i
+
+    minimum = nums[i + 1]
+    for j in range(i + 1, len(nums)):
+      curr = nums[j]
+      if (curr < minimum):
+        minimum = curr
+        index_of_minimum = j
+    if (i < len(nums) - 2):
+      #swap
+      nums[index_of_minimum] = nums[i]
+      nums[i] = minimum
+
+  return nums
+
+
+
 def test_sort():
 
   test_cases = [
@@ -79,6 +134,6 @@ def test_sort():
   ]
 
   for i in range(len(test_cases)):
-    print("insertion ", insertion_sort(test_cases[i]))
+    print("selection sort", selection_sort(test_cases[i]))
 
 test_sort()
