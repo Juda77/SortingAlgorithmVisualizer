@@ -1,5 +1,5 @@
 import sys
-#sys.setrecursionlimit(999)
+from max_heap import max_heap
 
 def merge_sort(nums):
 
@@ -68,6 +68,13 @@ def sort_by_pivot(nums, left_index, right_index, pivot):
   nums[swap_index] = pivot
   return swap_index
 
+def heap_sort(nums):
+
+  print("hello")
+  mh = max_heap(nums)
+  mh.print_heap()
+
+#heap_sort([5,4,2,8,9,10,0,3])
 
 
 
@@ -98,9 +105,7 @@ def insertion_sort(nums):
 
   return nums
 
-
 def selection_sort(nums):
-
 
   for i in range(len(nums) - 1):
     index_of_minimum = i
@@ -118,10 +123,9 @@ def selection_sort(nums):
 
   return nums
 
-
-
 def test_sort():
 
+  print("sup")
   test_cases = [
 
     [],
