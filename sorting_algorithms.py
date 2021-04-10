@@ -72,9 +72,9 @@ def heap_sort(nums):
 
   print("hello")
   mh = max_heap(nums)
-  mh.print_heap()
+  #mh.print_heap()
 
-#heap_sort([5,4,2,8,9,10,0,3])
+heap_sort([5,4,2,8,9,10,0,3])
 
 
 
@@ -140,4 +140,3 @@ def test_sort():
   for i in range(len(test_cases)):
     print("selection sort", selection_sort(test_cases[i]))
 
-test_sort()
