@@ -69,9 +69,7 @@ def sort_by_pivot(nums, left_index, right_index, pivot):
   return swap_index
 
 def heap_sort(nums):
-
   mh = max_heap(nums)
-  mh.print_heap()
 
 heap_sort([5,4,2,8,9,10,0,3])
 
