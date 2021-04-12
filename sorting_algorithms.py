@@ -70,9 +70,8 @@ def sort_by_pivot(nums, left_index, right_index, pivot):
 
 def heap_sort(nums):
 
-  print("hello")
   mh = max_heap(nums)
-  #mh.print_heap()
+  mh.print_heap()
 
 heap_sort([5,4,2,8,9,10,0,3])
 
@@ -125,7 +124,6 @@ def selection_sort(nums):
 
 def test_sort():
 
-  print("sup")
   test_cases = [
 
     [],
