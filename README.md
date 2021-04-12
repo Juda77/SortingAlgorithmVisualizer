@@ -6,6 +6,7 @@ selection sort,
 quick sort,
 merge sort, 
 heap sort,
-and BOGO SORT(the best one!)
+and BOGO SORT(the best one!).
+Also implements the max_heap data structure in order to implement heap sort.
 This project was inspired by Clement Mihailescu's sorting algorithm visualizer, as seen here: https://youtu.be/n4t_-NjY_Sg?t=521
 
