@@ -37,7 +37,6 @@ def merge_sort(nums):
 
   return sorted_first_and_second_halfs
 
-
 def quick_sort(nums):
   quick_sort_helper(nums, 0, len(nums) - 1)
   return nums
@@ -51,7 +50,6 @@ def quick_sort_helper(nums, left_index, right_index):
   pivot_index = sort_by_pivot(nums, left_index, right_index, pivot)
   quick_sort_helper(nums, left_index, pivot_index - 1)
   quick_sort_helper(nums, pivot_index + 1, right_index)
-
 
 #return final index of the pivot
 def sort_by_pivot(nums, left_index, right_index, pivot):
@@ -69,11 +67,7 @@ def sort_by_pivot(nums, left_index, right_index, pivot):
   return swap_index
 
 def heap_sort(nums):
-  mh = max_heap(nums)
-
-heap_sort([5,4,2,8,9,10,0,3])
-
-
+  max_heap(nums)
 
 def bubble_sort(nums):
 
@@ -134,5 +128,6 @@ def test_sort():
   ]
 
   for i in range(len(test_cases)):
-    print("selection sort", selection_sort(test_cases[i]))
+    max_heap(test_cases[i])
 
+test_sort()
