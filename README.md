@@ -9,7 +9,7 @@ Python program which visualizes the sorting process for many various sorting alg
 <p><h3>Insertion sort</h3></p>
 <p><h3>Selection sort</h3></p>
 <h2>O(Infinity??)</h2>
-<p><h3>BOGO SORT(the best one!)</h3></P>
+<p><h3>BOGO SORT(the best one! :( not really)</h3></P>
 
 This project also implements the max heap data structure in order to implement heap sort.
 
