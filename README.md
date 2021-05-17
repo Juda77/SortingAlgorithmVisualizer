@@ -10,6 +10,6 @@ Python program which visualizes the sorting process for many various sorting alg
 <p><h3>Selection sort</h3></p>
 <h2>O(Infinity??)</h2>
 <p><h3>BOGO SORT(the best one!)</h3></P>
-Also implements the max_heap data structure in order to implement heap sort.
-This project was inspired by Clement Mihailescu's sorting algorithm visualizer, as seen here: https://youtu.be/n4t_-NjY_Sg?t=521
+
+This project also implements the max heap data structure in order to implement heap sort.
 
