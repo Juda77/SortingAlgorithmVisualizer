@@ -1,4 +1,4 @@
-# SortingAlgorithmVisualizer
+# Sorting Algorithm Visualizer(Personal Project)
 Python program which visualizes the sorting process for many various sorting algorithms.
 This project also implements the max heap data structure in order to implement heap sort.
 The sorting algorithms included are:
