@@ -1,6 +1,6 @@
 # SortingAlgorithmVisualizer
 Python program which visualizes the sorting process for many various sorting algorithms, including:
-bubble sort,
+<p><h3>bubble sort</h3></p>
 insertion sort,
 selection sort,
 quick sort,
