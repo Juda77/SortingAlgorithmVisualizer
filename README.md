@@ -1,6 +1,6 @@
 # Sorting Algorithm Visualizer
 Python program which visualizes the sorting process for many various sorting algorithms.
-This project also implements the max heap data structure in order to implement heap sort.
+I've also implemented the max heap data structure in order to include heap sort.
 The sorting algorithms included are:
 <h2>O(nlogn) sorts:</h2>
 <p><h3>Quick sort</h3></p>
