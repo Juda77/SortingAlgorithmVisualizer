@@ -9,7 +9,7 @@ I programmed these algorithms when I was young and naive, and hadn't yet taken a
 data structures and algorithms class. Eventually, I learned some ways that we could optimize these
 sorts, and am planning to apply those optimizations later. For example, heap sort can be done in-place(so,
 there would be no need for the separate heap structure). Another optimization would be, for quick sort, making
-a smarter choice for the pivot instead of blindly picking the first element of the partition to be the pivot.
+a smarter choice for the pivot instead of blindly picking the first element of the partitioned piece to be the pivot.
 </p>
 
 The sorting algorithms included are:
