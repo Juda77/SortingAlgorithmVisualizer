@@ -9,8 +9,7 @@ I programmed these algorithms when I was young and naive, and hadn't yet taken a
 data structures and algorithms class. Eventually, I learned some ways that we could optimize these
 sorts, and am planning to apply those optimizations later. For example, heap sort can be done in-place(so,
 there would be no need for the separate heap structure). Another optimization would be, for quick sort, picking the median of three 
-random elements as the pivot instead of blindly picking the first element of each partitioned piece to be the pivot
-(the in-practice case asymptotic upper bound would still be O(nlogn), but the actual runtime is faster than regular quick sort).
+random elements as the pivot instead of blindly picking the first element of each partitioned piece to be the pivot(the in-practice case asymptotic upper bound would still be O(nlogn), but the actual runtime is faster than regular quick sort's runtime).
 </p>
 
 The sorting algorithms included are:
