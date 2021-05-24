@@ -8,8 +8,8 @@ I've also implemented the max heap data structure in order to include heap sort.
 I programmed these algorithms when I was young and naive, and hadn't yet taken an actual
 data structures and algorithms class. Eventually, I learned some ways that we could optimize these
 sorts, and am planning to apply those optimizations later. For example, heap sort can be done in-place(so,
-there would be no need for the separate heap structure). Another optimization would be, for quick sort, making
-a smarter choice for the pivot instead of blindly picking the first element of each partitioned piece to be the pivot.
+there would be no need for the separate heap structure). Another optimization would be, for quick sort, picking the median of three 
+random elements as the pivot instead of blindly picking the first element of each partitioned piece to be the pivot.
 </p>
 
 The sorting algorithms included are:
