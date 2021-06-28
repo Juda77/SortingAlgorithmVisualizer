@@ -1,5 +1,6 @@
-
-#max-heap class used for heap sort
+#max heap class used for heap sort
+# Note: I implemented this class before I learned that heap sort can be
+# done in-place
 class max_heap:
 
 #automatically build max heap upon instantiation

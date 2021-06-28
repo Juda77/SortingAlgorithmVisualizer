@@ -69,7 +69,7 @@ def sort_by_pivot(nums, left_index, right_index, pivot):
 def heap_sort(nums):
   max_heap(nums)
 
-def bubbleSort(array):
+def bubble_sort(array):
 
 	isSorted = False
 	counter = 0
