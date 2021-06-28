@@ -69,18 +69,25 @@ def sort_by_pivot(nums, left_index, right_index, pivot):
 def heap_sort(nums):
   max_heap(nums)
 
-def bubble_sort(nums):
+def bubbleSort(array):
 
-  for i in range(len(nums)):
-    stop_index = len(nums) - i
-    for j in range(0, stop_index):
-      if (j < stop_index - 1 and nums[j] > nums[j + 1]):
-          #swap
-          next_num = nums[j + 1]
-          nums[j + 1] = nums[j]
-          nums[j] = next_num
+	isSorted = False
+	counter = 0
+	while not isSorted:
+		isSorted = True
+		sortedFirstIndex = len(array) - 1 - counter
+		for i in range(0, sortedFirstIndex):
+			if array[i] > array[i + 1]:
+				swap(array, i, i + 1)
+				isSorted = False
+		counter += 1
 
-  return nums
+	return array
+
+def swap(array, index1, index2):
+	temp = array[index1]
+	array[index1] = array[index2]
+	array[index2] = temp
 
 def insertion_sort(nums):
 
