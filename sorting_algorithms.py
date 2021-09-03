@@ -1,5 +1,40 @@
+
+import pygame
+import random
+import time
 import sys
 from max_heap import max_heap
+
+
+WIDTH = 800
+HEIGHT = 600
+
+pygame.init()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+screen.fill((255, 255, 255))
+pygame.display.update()
+num_bars = 10
+bar_width = 20
+gap_space = 5
+
+def drawBar(x, height):
+  pygame.draw.rect(screen, (255,0,0), (x, 400, bar_width, height), 0)
+
+
+
+for i in range(num_bars):
+  height = random.randint(-100, -10)
+  width = (i * bar_width) + (i * gap_space) + (WIDTH - (num_bars * bar_width + num_bars * gap_space)) / 2
+  drawBar(width, height)
+
+while True:
+  pygame.display.update()
+  for event in pygame.event.get():
+    if event.type == pygame.QUIT:
+      pygame.quit()
+      sys.exit()
+
+
 
 def merge_sort(nums):
 
